@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="410.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="355.0" prefWidth="373.0" style="-fx-background-color: #e6e5dc;" VBox.vgrow="ALWAYS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+          <MenuBar layoutX="-1.0" layoutY="1.0" prefHeight="19.0" prefWidth="373.0" style="-fx-background-color: #ffe16b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <menus>
+              <Menu mnemonicParsing="false" text="File">
+                <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+                </items>
+              </Menu>
+              <Menu mnemonicParsing="false" text="About">
+                <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                </items>
+              </Menu>
+            </menus>
+          </MenuBar>
+            <HBox layoutX="3.0" layoutY="125.0" prefHeight="265.0" prefWidth="373.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+               <children>
+                  <VBox prefHeight="228.0" prefWidth="61.0">
+                     <children>
+                        <Button fx:id="seven" mnemonicParsing="false" onAction="#Seven" prefHeight="39.0" prefWidth="46.0" text="7">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="17.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="four" mnemonicParsing="false" onAction="#Four" prefHeight="39.0" prefWidth="46.0" text="4">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="one" mnemonicParsing="false" onAction="#One" prefHeight="39.0" prefWidth="46.0" text="1">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="zero" mnemonicParsing="false" onAction="#Zero" prefHeight="39.0" prefWidth="46.0" text="0">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="decimalBinary" mnemonicParsing="false" onAction="#DecimalBinary" prefHeight="39.0" prefWidth="46.0" style="-fx-background-color: #ffffab;" text="D-B">
+                           <font>
+                              <Font name="Gadugi Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="198.0" prefWidth="61.0">
+                     <children>
+                        <Button fx:id="eight" mnemonicParsing="false" onAction="#Eight" prefHeight="39.0" prefWidth="46.0" text="8">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="17.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="five" mnemonicParsing="false" onAction="#Five" prefHeight="39.0" prefWidth="46.0" text="5">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="two" mnemonicParsing="false" onAction="#Two" prefHeight="39.0" prefWidth="46.0" text="2">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="point" mnemonicParsing="false" onAction="#Point" prefHeight="39.0" prefWidth="46.0" text=".">
+                           <font>
+                              <Font name="Gadugi Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="music" mnemonicParsing="false" onAction="#Music" prefHeight="39.0" prefWidth="46.0" style="-fx-background-color: #ffffab;" text="ON Timer">
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Gadugi Bold" size="6.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="236.0" prefWidth="57.0">
+                     <children>
+                        <Button fx:id="nine" mnemonicParsing="false" onAction="#Nine" prefHeight="39.0" prefWidth="46.0" text="9" textFill="#060606">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="six" mnemonicParsing="false" onAction="#Six" prefHeight="39.0" prefWidth="46.0" text="6">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="three" mnemonicParsing="false" onAction="#Three" prefHeight="39.0" prefWidth="46.0" text="3">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="deleteMemory" mnemonicParsing="false" onAction="#DeleteMemory" prefHeight="39.0" prefWidth="46.0" text="AC">
+                           <font>
+                              <Font name="Gadugi Bold" size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="timer" mnemonicParsing="false" onAction="#Timer" prefHeight="39.0" prefWidth="70.0" style="-fx-background-color: #ffffab;" text="OFF Timer" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="6.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="203.0" prefWidth="97.0">
+                     <children>
+                        <JFXToggleButton fx:id="sin" prefHeight="29.0" prefWidth="100.0" text="sin" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="cos" prefHeight="29.0" prefWidth="100.0" text="cos" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="tan" prefHeight="29.0" prefWidth="100.0" text="tan" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="cot" prefHeight="29.0" prefWidth="100.0" text="cot" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="235.0" prefWidth="97.0">
+                     <children>
+                        <JFXToggleButton fx:id="total" prefHeight="29.0" prefWidth="100.0" text="+" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="division" prefHeight="58.0" prefWidth="112.0" text="÷" toggleColor="#999999" toggleLineColor="#fcd535" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="multiplication" prefHeight="55.0" prefWidth="108.0" text="x" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></JFXToggleButton>
+                        <JFXToggleButton fx:id="submission" prefHeight="35.0" prefWidth="96.0" text="-" toggleColor="#999999" toggleLineColor="#fdd835" unToggleColor="#fdd835">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextField fx:id="inputFiled2" layoutX="98.0" layoutY="87.0" prefHeight="40.0" prefWidth="45.0" style="-fx-background-color: #ffffab;" />
+            <TextField fx:id="inputFiled1" layoutX="14.0" layoutY="87.0" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: #ffffab;" />
+            <JFXToggleButton fx:id="ToggleButton2" layoutX="122.0" layoutY="75.0" prefHeight="7.0" prefWidth="25.0" rotate="-90.0" text=" " toggleColor="#999999" toggleLineColor="#ad7f10" unToggleColor="#fdd835">
+               <graphic>
+                  <JFXToggleButton prefHeight="7.0" prefWidth="25.0" text="." />
+               </graphic>
+            </JFXToggleButton>
+            <JFXToggleButton fx:id="ToggleButton1" layoutX="36.0" layoutY="75.0" prefHeight="7.0" prefWidth="25.0" rotate="-90.0" text=" " toggleColor="#999999" toggleLineColor="#ad7f10" unToggleColor="#fdd835" />
+            <Text layoutX="15.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First input:" wrappingWidth="80.00002034505212" AnchorPane.leftAnchor="15.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="95.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second input:" wrappingWidth="80.00002034505212">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Text>
+            <TextField fx:id="result" layoutX="186.0" layoutY="87.0" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #ffffab;" />
+            <Text layoutX="187.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="result:" AnchorPane.leftAnchor="187.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="equal" layoutX="186.0" layoutY="348.0" mnemonicParsing="false" onAction="#Equal" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #ffffab;" text="=">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="time" layoutX="266.0" layoutY="53.0" prefHeight="37.0" prefWidth="97.0" textAlignment="CENTER" textFill="#484202" underline="true">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="24.0" />
+               </font></Label>
+         </children></AnchorPane>
+  </children>
+</VBox>
